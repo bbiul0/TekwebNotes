@@ -1,0 +1,57 @@
+CSS NOTES
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>This is a styled paragraph.</p>
+</body>
+</html>
+
+universal
+* {
+    box-sizing: border-box;
+}
+
+ID
+#myID {
+    font-size: 20px;
+}
+
+
+color: red;              /* Text color */
+background-color: blue;  /* Background color */
+font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+margin: 10px;    /* Space outside an element */
+padding: 20px;   /* Space inside an element */
+border: 2px solid black;
+border-radius: 5px;  /* Rounded corners */
+width: 300px;
+height: 200px;
+display: block;   /* Each element takes up its own line */
+display: inline;  /* Elements flow within the same line */
+display: flex;    /* Flexible layout (flexbox) */
+
+a. box model
+div {
+    width: 200px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 20px;
+}
+b. flexbox
+.container {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center;           /* Align items vertically */
+}
+c. grid layout
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+}
