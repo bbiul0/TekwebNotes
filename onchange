@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+</head>
+<body>
+    <div class="input-group">
+        <select id="type" class="fw-bolder select" onchange="handleSelectChange()">
+            <option value="Square">Square</option>
+            <option value="Square-Border">Square Border</option>
+            <option value="Triangle">Triangle</option>
+        </select>
+    </div>
+
+    <script>
+        function handleSelectChange() {
+            const selectElement = document.getElementById('type');
+            const selectedValue = selectElement.value;
+            console.log('Selected option:', selectedValue);
+            // Add additional functionality here
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+/////////////////////////
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+</head>
+<body>
+    <div class="input-group">
+        <input type="text" id="textInput" placeholder="Type something..." oninput="handleInputChange()">
+    </div>
+
+    <script>
+        function handleInputChange() {
+            const inputElement = document.getElementById('textInput');
+            const inputValue = inputElement.value;
+            console.log('Input value:', inputValue);
+            // Add additional functionality here
+        }
+    </script>
+</body>
+</html>
