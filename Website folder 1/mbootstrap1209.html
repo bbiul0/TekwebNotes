@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML, CSS, jQuery, and Bootstrap Example</title>
+
+    <!-- Including Bootstrap CSS -->
+    <!-- Explanation: This line links to the Bootstrap CDN. It allows us to use Bootstrap's pre-built CSS styles -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- Explanation: This is where you can write custom styles to override Bootstrap or add your own design -->
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .custom-heading {
+            color: blue; /* This CSS rule changes the color of the heading to blue */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Bootstrap Navbar -->
+    <!-- Explanation: This is a basic navigation bar from Bootstrap. It’s used to create a responsive navigation menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="custom-heading">Welcome to My Web Page</h1>
+        <p>This is a basic web page that uses HTML, CSS, Bootstrap, and jQuery.</p>
+
+        <!-- jQuery Click Example -->
+        <!-- Explanation: This button uses jQuery to show/hide content when clicked -->
+        <button id="toggle-button" class="btn btn-primary">Toggle Extra Info</button>
+        <p id="extra-info" style="display: none;">This is some additional information that appears when the button is clicked!</p>
+    </div>
+
+    <!-- Including jQuery -->
+    <!-- Explanation: jQuery is a JavaScript library that makes it easier to work with HTML elements, events, and animations -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Including Bootstrap JS -->
+    <!-- Explanation: This includes Bootstrap’s JavaScript functionality, like the navigation bar collapse behavior -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom jQuery Script -->
+    <!-- Explanation: Here we write a jQuery script to make the button toggle the visibility of the paragraph -->
+    <script>
+        $(document).ready(function(){
+            $('#toggle-button').click(function(){
+                $('#extra-info').toggle(); /* jQuery's .toggle() function hides or shows the element */
+            });
+        });
+    </script>
+
+
+    
+    <div class="container">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+      </div>
+
+      <div class="container text-center"> 
+        <!-- -left right center -->
+        <div class="row">
+          <div class="col">
+            Column1
+          </div>
+          <div class="col">
+            Column2
+          </div>
+          <div class="col">
+            Column3
+          </div>
+          <div class="col">
+            Column4
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+        <div class="row">
+            nono  baris 1
+            gyhf
+            gjgv          
+            
+        </div>
+      </div>
+
+      
+
+</body>
+</html>

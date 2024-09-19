@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Display Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>User Input Form</h2>
+        <!-- Form input untuk mengisi data -->
+        <div class="mb-3">
+          <label for="inputText" class="form-label">Enter some text:</label>
+          <input type="text" class="form-control" id="inputText" placeholder="Type something here...">
+        </div>
+        <div class="mb-3">
+          <label for="inputPattern" class="form-label">Choose a pattern:</label>
+          <select class="form-select" id="inputPattern">
+            <option value="star">Star (*)</option>
+            <option value="dash">Dash (-)</option>
+            <option value="hash">Hash (#)</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="updateDisplay()">Update Display</button>
+      </div>
+      
+      <!-- Tempat menampilkan hasil update -->
+      <div class="col-md-6">
+        <h2>Display Area</h2>
+        <div id="displayArea" class="border p-4" style="min-height: 150px;">
+          <!-- This content will be dynamically updated -->
+          <p>Content will appear here based on user input.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>
